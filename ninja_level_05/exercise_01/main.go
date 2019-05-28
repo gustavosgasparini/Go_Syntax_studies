@@ -3,15 +3,15 @@ package main
 import "fmt"
 
 type person struct {
-	firstName string
-	lastName string
+	firstName   string
+	lastName    string
 	iceCreamFav []string
 }
 
-func main()  {
+func main() {
 	p1 := person{
 		firstName: "Gustavo",
-		lastName: "Gasparini",
+		lastName:  "Gasparini",
 		iceCreamFav: []string{
 			"chocolate",
 			"strawberry",
@@ -20,14 +20,14 @@ func main()  {
 	}
 	fmt.Println(p1)
 	for i, v := range p1.iceCreamFav {
-		fmt.Println(i,v)
+		fmt.Println(i, v)
 	}
 
 	fmt.Println("-------------------")
 
 	p2 := person{
 		firstName: "Rebeca",
-		lastName: "Rancan",
+		lastName:  "Rancan",
 		iceCreamFav: []string{
 			"Choolate",
 			"Strawberry",
@@ -36,6 +36,6 @@ func main()  {
 	}
 	fmt.Println(p2)
 	for i, v := range p2.iceCreamFav {
-		fmt.Println(i,v)
+		fmt.Println(i, v)
 	}
 }
